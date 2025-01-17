@@ -1,0 +1,62 @@
+.modal {
+    &.show {
+        display: grid !important;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .modal-dialog {
+        max-width: 70%;
+
+        @include media-query(1024px) {
+            max-width: 90%;
+        }
+
+        @include media-query(575px) {
+            width: auto;
+        }
+
+        @include media-query(490px) {
+            max-width: 100%;
+        }
+
+        &.compare-dialog {
+            @include media-query(1024px) {
+                overflow: hidden;
+                max-width: 100% !important;
+            }
+        }
+
+        .modal-content {
+            background: transparent;
+            border: 0;
+
+            .modal-body {
+                .detail-wrapper {
+                    .product-text-container {
+                        padding: $gap-38;
+                    }
+
+                    .quick-image-box {
+                        border-radius: $br-24;
+                        background-color: $white;
+                        text-align: center;
+                        height: 100%;
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                        padding: clamp(16px, 1.667vw, 48px);
+
+                        img {
+                            width: 28.75vw;
+
+                            @include media-query(490px) {
+                                width: 48.98vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

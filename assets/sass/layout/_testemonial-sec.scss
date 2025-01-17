@@ -1,0 +1,13 @@
+.testemonial-sec {
+  .testemonial-slider {
+    .testemonial-block {
+      margin: 0 12px;
+      padding: clamp(18px, 1.25vw, 48px);
+      display: flex;
+      flex-direction: column;
+      gap: $gap-24;
+      border-radius: $br-12;
+      background-color: $lightest-gray;
+    }
+  }
+}

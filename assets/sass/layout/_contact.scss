@@ -1,0 +1,102 @@
+.contact-sec {
+    .info-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: clamp(18px, 1.25vw, 48px);
+        background-color: $lightest-gray;
+        border-radius: $br-12;
+        width: 100%;
+
+        .phone-icon {
+            width: clamp(40px, 2.5vw, 54px);
+            height: clamp(40px, 2.5vw, 54px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $accent-3;
+
+            svg {
+                width: clamp(18px, 1.25vw, 48px);
+                height: clamp(18px, 1.25vw, 48px);
+            }
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: $gap-8;
+
+            .link-1 {
+                width: clamp(40px, 2.5vw, 54px);
+                height: clamp(40px, 2.5vw, 54px);
+                border-radius: 50%;
+                background-color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: $transition;
+
+                svg {
+                    width: clamp(18px, 1.25vw, 48px);
+                    height: clamp(18px, 1.25vw, 48px);
+
+                    path {
+                        transition: $transition;
+                    }
+                }
+
+                &:hover {
+                    background-color: $accent-3;
+
+                    svg {
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.map {
+    .map-wrapper {
+        iframe {
+            width: 100%;
+            height: clamp(450px, 31.25vw, 900px);
+        }
+    }
+
+}
+
+.glode-sec {
+    .glode-block {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-16;
+
+        .globe-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.error-sec {
+    .error-text {
+        color: $black;
+        leading-trim: both;
+        text-edge: cap;
+        font-size: clamp(98px, 15.625vw, 628px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        /* 360px */
+        letter-spacing: -9px;
+    }
+}

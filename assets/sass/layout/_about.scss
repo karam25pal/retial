@@ -1,0 +1,38 @@
+.about-sec {
+    .about-content {
+        padding: clamp(18px, 1.25vw, 48px) clamp(24px, 1.667vw, 64px);
+        border-radius: $br-12;
+        background-color: $lightest-gray;
+    }
+}
+
+.our-team {
+    .team-block {
+        border-radius: $br-12;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        .team-img {
+            overflow: hidden;
+
+            img {
+                transition: $transition;
+                width: 100%;
+            }
+        }
+
+        .team-content {
+            padding: clamp(12px, 0.833vw, 32px);
+            background-color: $lightest-gray;
+        }
+
+        &:hover {
+            .team-img {
+                img {
+                    transform: scale(1.04);
+                }
+            }
+        }
+    }
+}

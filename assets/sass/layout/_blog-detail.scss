@@ -1,0 +1,70 @@
+.blog-detail-sec {
+    position: relative;
+
+    .sticky-wrapper {
+        overflow: hidden;
+
+        .sidebar {
+            .menu {
+                li {
+                    &.text-18 {
+                        padding: 4px 0 4px 8px;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                        color: $dark-gray;
+                        border-left: 2px solid $white;
+                    }
+
+                    &.cur {
+                        border-left: 2px solid $accent-1;
+                        color: $light-black !important;
+                    }
+                }
+            }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+                gap: $gap-12;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    border: 1px solid $accent-1;
+                    width: clamp(24px, 1.667vw, 64px);
+                    height: clamp(24px, 1.667vw, 64px);
+                    transition: $transition;
+
+                    svg {
+                        transition: $transition;
+                        width:  clamp(10px, 0.729vw, 28px);
+                        height:  clamp(10px, 0.729vw, 28px);
+
+                        path {
+                            fill: $accent-1;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $accent-1;
+
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .calendar-img,
+    .user-img {
+        width: clamp(16px, 1.042vw, 40px);
+        height: clamp(16px, 1.042vw, 40px);
+    }
+}

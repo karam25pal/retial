@@ -1,0 +1,185 @@
+.footer {
+    background-color: $lightest-gray;
+    padding: clamp(28px, 2.083vw, 54px) 0 clamp(18px, 1.25vw, 48px);
+
+    .footer-logo {
+        width: clamp(88px, 7.649vw, 254px);
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+        gap: $gap-8;
+
+        .link-1 {
+            width: clamp(40px, 2.5vw, 54px);
+            height: clamp(40px, 2.5vw, 54px);
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: $transition;
+
+            svg {
+                width: clamp(18px, 1.25vw, 48px);
+                height: clamp(18px, 1.25vw, 48px);
+
+                path {
+                    transition: $transition;
+                }
+            }
+
+            &:hover {
+                background-color: $accent-3;
+
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-links {
+        li {
+            a {
+                color: $dark-gray;
+                font-family: $font-primary;
+                font-size: clamp(12px, 0.833vw, 32px);
+                /* 16px */
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                transition: $transition;
+                padding-bottom: 8px;
+
+                &:hover {
+                    color: $accent-3;
+                    transform: translateX(12px);
+                }
+            }
+        }
+    }
+
+    .quick-links {
+        padding-left: clamp(24px, 1.667vw, 64px);
+    }
+
+    .num-block {
+        display: flex;
+        align-items: center;
+        gap: $gap-12;
+
+        .num-icon {
+            width: clamp(42px, 2.5vw, 54px);
+            height: clamp(42px, 2.5vw, 54px);
+            border-radius: 50%;
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: $transition;
+
+            svg {
+                width: clamp(18px, 1.25vw, 48px);
+                height: clamp(18px, 1.25vw, 48px);
+                transition: $transition;
+
+                path {
+                    transition: $transition;
+                }
+            }
+        }
+
+        .h6,
+        .text-18 {
+            transition: $transition;
+        }
+
+        &:hover {
+
+            .h6,
+            .text-18 {
+                color: $accent-3 !important;
+            }
+
+            .num-icon {
+                background-color: $accent-3;
+
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: $br-8;
+        border: 1px solid $black;
+        padding: 2px 4px 2px $gap-16;
+
+        .newsvector {
+            svg {
+                width: clamp(16px, 1.042vw, 40px);
+                height: clamp(16px, 1.042vw, 40px);
+            }
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            box-shadow: none;
+
+            &:focus {
+                border: none;
+                background-color: transparent;
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                color: $dark-gray;
+                font-family: $font-primary;
+                font-size: clamp(12px, 0.833vw, 32px);
+                /* 16px */
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+
+        .news-button {
+            flex-shrink: 0;
+            padding: clamp(10px, 0.729vw, 28px);
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            background-color: $black;
+            transition: $transition;
+            border: none;
+
+            svg {
+                width: clamp(16px, 1.042vw, 40px);
+                height: clamp(16px, 1.042vw, 40px);
+            }
+
+            &:hover {
+                background-color: $accent-3;
+            }
+        }
+    }
+
+    .payment-card {
+        width: clamp(40px, 2.5vw, 54px);
+        height: clamp(24px, 1.667vw, 64px);
+    }
+}

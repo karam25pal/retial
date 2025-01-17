@@ -1,0 +1,156 @@
+.our-collection-sec {
+    .card-block-1 {
+        padding: clamp(50px, 5.469vw, 254px) clamp(40px, 2.5vw, 54px);
+        border-radius: $br-12;
+        background-color: $lightest-gray;
+    }
+
+    .card-block-2 {
+        padding: clamp(18px, 1.25vw, 48px);
+        border-radius: $br-12;
+        background-color: $lightest-gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: $gap-24;
+
+        a {
+            width: 100%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        .card-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $gap-12;
+            transition: $transition;
+
+            span {
+                transition: all 0.4s ease-in-out;
+            }
+
+            .icon {
+                width: clamp(28px, 2.083vw, 54px);
+                height: clamp(28px, 2.083vw, 54px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $white;
+                transform: all 0.4s ease-in-out;
+
+                svg {
+                    width: clamp(16px, 1.042vw, 40px);
+                    height: clamp(16px, 1.042vw, 40px);
+                    transition: $transition;
+
+                    path {
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.05) translateX(12px);
+            }
+
+            .card-btn {
+                .icon {
+                    background-color: $accent-3;
+
+                    svg {
+                        transform: rotate(45deg);
+
+                        path {
+                            stroke: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product-deal-sec {
+    .coming-soon-cd {
+        ul {
+            display: flex;
+            gap: $gap-16;
+
+            @include media-query(576px) {
+                justify-content: center;
+            }
+
+            li {
+                width: clamp(48px, 3.333vw, 128px);
+                height: clamp(48px, 3.333vw, 128px);
+                background: transparent;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                background-color: $black;
+                border-radius: $br-8;
+                color: $white;
+
+                h2 {
+                    margin-bottom: 4px;
+                    font-size: clamp(15px, 0.99vw, 40px);
+                    /* 19px */
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    color: $white;
+                }
+
+                h6,
+                p {
+                    color: $white;
+                }
+
+            }
+        }
+
+    }
+
+    .deal-card {
+        padding: clamp(12px, 0.833vw, 32px);
+        display: flex;
+        align-items: center;
+        gap: $gap-16;
+
+        .deal-card-img {
+            padding: clamp(12px, 0.833vw, 32px);
+            border-radius: 8px;
+            background-color: $lightest-gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            transition: $transition;
+        }
+
+        &:hover {
+            .hover-content {
+                color: $accent-3 !important;
+            }
+
+            .deal-card-img {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

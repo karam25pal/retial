@@ -1,0 +1,13 @@
+.barnds-sec {
+  .brands-slider {
+    .brands-block {
+      margin: 0 12px;
+      padding: clamp(18px, 1.25vw, 48px) clamp(12px, 0.833vw, 32px);
+      border-radius: $br-8;
+      background-color: $lightest-gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

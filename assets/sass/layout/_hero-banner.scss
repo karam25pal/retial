@@ -1,0 +1,29 @@
+.hero-sec {
+  .hero-content {
+    position: relative;
+    padding: 0 clamp(12px, 5vw, 128px) 0 clamp(42px, 10.938vw, 298px);
+
+    @include media-query(1025px) {
+      padding: 0 0 0 26px;
+    }
+    @include media-query(821px){
+      padding: clamp(12px, 3.333vw, 128px);
+      padding-right: clamp(12px, 12.5vw, 228px);
+    }
+    @include media-query(490px){
+      padding-top: 48px;
+    }
+
+    .vec-shape {
+      position: absolute;
+      right: clamp(40px, 15.151vw, 328px);
+      top: clamp(40px, 2.843vw, 94px);
+      width: clamp(40px, 2.698vw, 128px);
+      height: clamp(40px, 2.5vw, 54px);
+
+      @include media-query(1025px) {
+        display: none;
+      }
+    }
+  }
+}

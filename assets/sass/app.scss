@@ -1,0 +1,145 @@
+/*---------------------------------------------"
+// Template Name: Teach Me
+// Description:  Teach Me Html Template
+// Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Responsive
+|___ Reset Styles
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*-------------------------
+    Variables
+-------------------------*/
+/* Fonts */
+$font-sec: "Lora", sans-serif;
+$font-primary: "Roboto", sans-serif;
+$font-awesome: "Font Awesome 6 Pro";
+
+/* Colors */
+$accent-1: #FFD700;
+$accent-2: #DD3842;
+$accent-3: #FD961E;
+$black: #0C0C0D;
+$medium-black: #1E1F20;
+$light-black: #141516;
+$dark-gray: #45474F;
+$light-gray: #92949F;
+$lightest-gray: #F2F2F2;
+$white: #FFFFFF;
+
+/* Transitions */
+$transition: all 0.4s ease-in-out;
+$duration: 6.8s;
+
+/* Border-Radius */
+$br-4: 4px;
+$br-8: clamp(4px, 0.417vw, 16px);
+$br-10: clamp(2px, 0.521vw, 20px);
+$br-12: clamp(5px, 0.625vw, 24px);
+$br-14: clamp(8px, 0.729vw, 28px);
+$br-16: clamp(6px, 0.833vw, 32px);
+$br-18: clamp(8px, 0.938vw, 36px);
+$br-20: clamp(10px, 1.042vw, 40px);
+$br-24: clamp(10px, 1.25vw, 48px);
+$br-32: clamp(16px, 1.667vw, 64px);
+$br-48: clamp(18px, 2.5vw, 68px);
+
+/* Gap */
+$gap-4: clamp(2px, 0.208vw, 8px);
+$gap-6: clamp(3px, 0.313vw, 7px);
+$gap-8: clamp(4px, 0.417vw, 16px);
+$gap-10: clamp(5px, 0.521vw, 20px);
+$gap-12: clamp(8px, 0.625vw, 24px);
+$gap-14: clamp(10px, 0.729vw, 28px);
+$gap-16: clamp(12px, 0.833vw, 32px);
+$gap-18: clamp(14px, 0.938vw, 36px) !important;
+$gap-20: clamp(16px, 1.042vw, 40px) !important;
+$gap-24: clamp(18px, 1.25vw, 48px) !important;
+$gap-32: clamp(24px, 1.667vw, 64px);
+$gap-38: clamp(28px, 1.979vw, 76px);
+$gap-40: clamp(28px, 2.083vw, 54px);
+$gap-48: clamp(40px, 2.5vw, 54px);
+$gap-64: clamp(48px, 3.333vw, 128px);
+
+/*-------------------------
+    Responsive Styles
+-------------------------*/
+@import "helpers/mixin";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+
+/*-------------------------
+Helpers
+-------------------------*/
+@import "helpers/classes";
+
+@import "helpers/spacing";
+
+/*-------------------------
+Elements
+-------------------------*/
+
+@import "elements/buttons";
+
+@import "elements/modal-box";
+
+@import "elements/form";
+
+@import "elements/preloader";
+
+@import "elements/dropdown";
+
+/*-------------------------
+  layouts
+-------------------------*/
+@import "layout/header";
+
+@import "layout/hero-banner";
+
+@import "layout/footer";
+
+@import "layout/about";
+
+@import "layout/sidebar";
+
+@import "layout/cart-sidebar";
+
+@import "layout/testemonial-sec";
+
+@import "layout/blog-detail";
+
+@import "layout/contact";
+
+@import "layout/our-collection";
+
+@import "layout/faqs";
+
+@import "layout/blogs-section";
+
+@import "layout/shop";
+
+@import "layout/product-detail";
+
+@import "layout/brands-sec";

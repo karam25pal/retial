@@ -1,0 +1,490 @@
+/*----------------------------------------*/
+/*  Button CSS START
+/*----------------------------------------*/
+
+.cus-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: clamp(4px, 0.606vw, 16px) clamp(24px, 1.667vw, 64px);
+  font-size: clamp(13px, 0.833vw, 32px);
+  font-family: $font-primary;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid $black;
+  border-radius: $br-48;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: $accent-3;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .text {
+    position: relative;
+    color: $black;
+    z-index: 1;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 12px transparent;
+    border: 1px solid $accent-3;
+
+    .text {
+      color: $white;
+    }
+
+    .circle {
+      width: 360px;
+      height: 360px;
+      opacity: 1;
+    }
+  }
+
+  &.light-btn {
+    padding: clamp(10px, 0.633vw, 24px) clamp(16px, 1.25vw, 40px);
+
+    .circle {
+      background-color: $accent-2;
+    }
+
+    svg {
+      position: relative;
+      z-index: 999;
+    }
+
+    .text {
+      color: $black;
+      font-weight: 500;
+      transition: $transition;
+    }
+
+    &:hover {
+      .text {
+        color: $white;
+      }
+
+      .circle {
+        background-color: $accent-2;
+      }
+    }
+  }
+}
+
+.cus-btn-2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: clamp(4px, 0.606vw, 16px) clamp(24px, 1.667vw, 64px);
+  font-size: clamp(13px, 0.833vw, 32px);
+  font-family: $font-primary;
+  font-weight: 500;
+  background-color: $accent-3;
+  border: 1px solid $white;
+  border-radius: $br-48;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .text {
+    position: relative;
+    color: $white;
+    z-index: 1;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 12px transparent;
+    background-color: transparent;
+    border: 1px solid $black;
+
+    .text {
+      color: $black;
+    }
+
+    .circle {
+      width: 360px;
+      height: 360px;
+      opacity: 1;
+    }
+  }
+
+  &.light-btn {
+    padding: clamp(10px, 0.633vw, 24px) clamp(16px, 1.25vw, 40px);
+
+    .circle {
+      background-color: $accent-2;
+    }
+
+    svg {
+      position: relative;
+      z-index: 999;
+    }
+
+    .text {
+      color: $black;
+      font-weight: 500;
+      transition: $transition;
+    }
+
+    &:hover {
+      .text {
+        color: $white;
+      }
+
+      .circle {
+        background-color: $accent-2;
+      }
+    }
+  }
+
+  &.orange-btn {
+    padding: clamp(10px, 0.633vw, 24px) clamp(16px, 1.25vw, 40px);
+
+    .circle {
+      background-color: $accent-2;
+    }
+
+    svg {
+      position: relative;
+      z-index: 999;
+    }
+
+    .text {
+      color: $black;
+      font-weight: 500;
+      transition: $transition;
+    }
+
+    &:hover {
+      border: 1px solid $accent-2;
+
+      .text {
+        color: $white;
+      }
+
+      .circle {
+        background-color: $accent-2;
+      }
+    }
+  }
+}
+
+.cus-btn-3 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-4;
+  padding: clamp(10px, 0.964vw, 24px) clamp(32px, 2.5vw, 64px);
+  font-size: clamp(14px, 0.833vw, 32px);
+  font-family: $font-primary;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 130%;
+  background-color: $white;
+  border-radius: $br-4;
+  color: $black;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid $white;
+
+  svg {
+    position: absolute;
+    width: clamp(23px, 1.25vw, 48px);
+    height: clamp(23px, 1.25vw, 48px);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .arr-1 {
+    right: 16px;
+  }
+
+  .arr-2 {
+    left: -25%;
+  }
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:hover {
+    background: transparent;
+    color: $white;
+    border: 1px solid $white;
+
+    .arr-1 {
+      right: -25%;
+    }
+
+    .arr-2 {
+      left: 16px;
+
+      path {
+        stroke: $white;
+      }
+    }
+
+    .text {
+      transform: translateX(12px);
+    }
+
+    .circle {
+      width: 240px;
+      height: 240px;
+      opacity: 1;
+    }
+  }
+}
+
+
+/*----------------------------------------*/
+/* scroll to top
+/*----------------------------------------*/
+.scrollToTopBtn {
+  background-color: $accent-3;
+  border-radius: 50%;
+  border: 1px solid $white;
+  color: $white;
+  cursor: pointer;
+  font-size: clamp(18px, 1.25vw, 48px);
+  line-height: 48px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: clamp(40px, 2.5vw, 94px);
+  height: clamp(40px, 2.5vw, 94px);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: $black;
+    color: $white;
+    transition: $transition;
+  }
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+// ===================  Quantity BUTTONS =================== //
+.quantity {
+  display: inline-flex;
+  align-items: flex-start;
+  border: 0;
+  border-radius: $br-48;
+  padding: clamp(4px, 0.208vw, 24px) clamp(6px, 0.417vw, 48px);
+  border: 1px solid $black;
+
+  .input-area {
+    display: flex;
+
+    input {
+      display: grid;
+      align-content: center;
+      border: none;
+      border-radius: 0px;
+      text-align: center;
+      font-weight: 500;
+      background-color: transparent;
+      color: $black;
+      width: clamp(32px, 2.083vw, 80px);
+      height: clamp(32px, 2.083vw, 80px);
+      padding: 0;
+      font-size: clamp(17px, 1.094vw, 40px);
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      &.decrement {
+        font-size: clamp(36px, 1.979vw, 72px);
+        font-weight: 200;
+        border-radius: 0;
+        border: 0;
+      }
+
+      &.increment {
+        font-size: clamp(26px, 1.458vw, 68px);
+        font-weight: 200;
+        border-radius: 0;
+        border: 0;
+      }
+
+      &.number {
+        padding: 0;
+        background: transparent;
+        font-size: clamp(16px, 0.938vw, 40px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+      }
+    }
+  }
+}
+
+
+// ===================  PAGINATIONS =================== // 
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+
+  #border-pagination {
+    display: flex;
+    gap: $gap-12;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $black !important;
+        width: clamp(28px, 2.083vw, 54px);
+        height: clamp(28px, 2.083vw, 54px);
+        border: none;
+        border-radius: 50%;
+        float: left;
+        transition: $transition;
+        font-family: $font-primary;
+        font-size: clamp(12px, 0.833vw, 42px);
+        /* 16px */
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        background-color: $lightest-gray;
+
+        svg {
+          width: clamp(16px, 1.042vw, 40px);
+          height: clamp(16px, 1.042vw, 40px);
+          path {
+            fill: $black;
+            transition: $transition;
+          }
+        }
+
+        &.active {
+          background-color: $accent-3;
+          color: $white !important;
+        }
+
+        &:hover {
+          background-color: $accent-3;
+          color: $white !important;
+
+          svg {
+            path {
+              fill: $white;
+              transition: $transition;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// SLIDER ARROWS
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  gap: $gap-8;
+
+  .arrow-btn {
+    width: clamp(28px, 2.083vw, 54px);
+    height: clamp(28px, 2.083vw, 54px);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: $transition;
+    border-radius: 50%;
+    background-color: $lightest-gray;
+
+    svg {
+      width: clamp(16px, 1.042vw, 40px);
+      height: clamp(16px, 1.042vw, 40px);
+      transition: $transition;
+
+      path {
+        fill: $black;
+        transition: $transition;
+      }
+    }
+
+    &:hover {
+      transition: $transition;
+      background-color: $accent-3;
+
+      svg {
+        path {
+          fill: $white;
+          transition: $transition;
+        }
+      }
+    }
+  }
+}

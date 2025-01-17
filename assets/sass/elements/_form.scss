@@ -1,0 +1,112 @@
+/*-------------------------
+  Form Styling
+-------------------------*/
+
+
+textarea.form-control {
+  min-height: 118px;
+  max-height: 150px;
+
+  @media(max-width: 578px) {
+    min-height: 80px;
+    max-height: 80px;
+  }
+  padding-left: 12px;
+}
+
+.form-control {
+  padding: clamp(12px, 0.833vw, 40px);
+  padding-left: 40px;
+  border-radius: 8px;
+  border: 1px solid $dark-gray;
+  background: transparent;
+  font-family: $font-primary;
+  font-size: clamp(15px, 0.833vw, 22px);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  position: relative;
+  color: $dark-gray;
+  box-shadow: none;
+  outline: 0;
+
+
+  &:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+    color: $black !important;
+    background: transparent !important;
+  }
+
+  &::placeholder {
+    color: $dark-gray;
+    opacity: 1;
+  }
+}
+
+
+.input-block {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: clamp(12px, 0.938vw, 48px);
+    left: clamp(12px, 0.625vw, 32px);
+    width: clamp(16px, 1.042vw, 48px);
+    height: clamp(16px, 1.042vw, 48px);
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  &.error {
+    color: #ff0000;
+  }
+}
+
+
+
+.cus-checkBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    display: none;
+    color: $light-black;
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: $black;
+    font-size: clamp(12px, 0.833vw, 42px);
+    font-weight: 400;
+    line-height: 120%;
+
+
+    &::before {
+      content: '\f0c8';
+      font-family: $font-awesome;
+      color: $light-black;
+      font-size: clamp(16px, 1.042vw, 20px);
+      font-weight: 300;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    +label {
+      &::before {
+        content: '\f14a';
+        color: $accent-3;
+        font-weight: 600;
+      }
+    }
+  }
+}
